@@ -6,4 +6,6 @@ Calcule el salario semanal de acuerdo a las horas trabajadas y la sucursal ingre
 el usuario. """
 
 
-def calculadora():
+def calculateSalary(workedHours, branch):
+    if branch == 'A'
+        if 
