@@ -27,4 +27,4 @@ elif usedWater > 13:
 if economicTier in '12':
     total = total* 0.80
     
-print('El total a pagar es de: ', total)
+print('El total a pagar es de: ', total+50)
