@@ -7,5 +7,14 @@ el usuario. """
 
 
 def calculateSalary(workedHours, branch):
-    if branch == 'A'
-        if 
+    salary = 0
+    if branch == 'A':
+        if workedHours < 40:
+            salary = workedHours * 10
+        else:
+            salary =  ((workedHours - 39) * 10)+((workedHours - 39) * 20)
+    elif branch == 'B':
+        if workedHours < 45:
+            salary = workedHours * 12
+        else:
+            salary =  ((workedHours - 44) *12) +((workedHours - 44) * 20)
