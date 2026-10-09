@@ -5,6 +5,9 @@ de 45 horas. Las horas extra en la sucursal A se cobran a $20 y en la sucursal B
 Calcule el salario semanal de acuerdo a las horas trabajadas y la sucursal ingresada por
 el usuario. """
 
+userInputWorkedHours = int(input('Ingresa la cantidad de horas trabajadas: '))
+userInputBranch = input('ingresa la sucursal: ')
+
 
 def calculateSalary(workedHours, branch):
     salary = 0
@@ -12,9 +15,16 @@ def calculateSalary(workedHours, branch):
         if workedHours < 40:
             salary = workedHours * 10
         else:
-            salary =  ((workedHours - 39) * 10)+((workedHours - 39) * 20)
+            salary = (39 * 10) + ((workedHours - 39) * 20)
+        print('El salario semanal para', workedHours, 'y en la sucursal', branch, 'es de', salary )
+
+
+
     elif branch == 'B':
         if workedHours < 45:
             salary = workedHours * 12
         else:
-            salary =  ((workedHours - 44) *12) +((workedHours - 44) * 20)
+            salary =  (44 * 12) + ((workedHours - 44) * 20)
+        print('El salario semanal para', workedHours, 'y en la sucursal', branch, 'es de', salary )
+
+calculateSalary(userInputWorkedHours, userInputBranch)
