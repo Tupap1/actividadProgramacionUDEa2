@@ -14,6 +14,18 @@ programa que determine el valor a pagar.
 usedWater = input('Ingresa la cantida de m3 consumidos: ')
 economicTier = input('Ingresa el estrato: ')
 
+while True:
+    if float(usedWater) < 0:
+        print('ingresa una opcion valida')
+        usedWater = input('Ingresa la cantida de m3 consumidos: ')
+    elif economicTier not in '123456':
+        print('ingresa una opcion valida')
+        economicTier = input('Ingresa el estrato: ')
+    else:
+        break
+
+
+
 total = 0
 usedWater = float(usedWater)
 if usedWater  > 0 or usedWater <= 9:

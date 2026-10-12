@@ -9,6 +9,7 @@ userInputWorkedHours = int(input('Ingresa la cantidad de horas trabajadas: '))
 userInputBranch = input('ingresa la sucursal: ')
 
 
+
 def calculateSalary(workedHours, branch):
     salary = 0
     if branch == 'A':
@@ -27,4 +28,9 @@ def calculateSalary(workedHours, branch):
             salary =  (44 * 12) + ((workedHours - 44) * 20)
         print('El salario semanal para', workedHours, 'y en la sucursal', branch, 'es de', salary )
 
-calculateSalary(userInputWorkedHours, userInputBranch)
+
+
+if userInputBranch  in 'AB' and userInputWorkedHours >= 1:
+    calculateSalary(userInputWorkedHours, userInputBranch)
+else:
+    print('Ingresa una opcion valida')
