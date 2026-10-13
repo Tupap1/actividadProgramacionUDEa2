@@ -5,17 +5,14 @@ def findPrimeNumbers(minValue, maxValue):
     primeNumbers = ''
 
     for i in range(minValue, maxValue+1):
-
-        if i <= 1: 
-            continue
-        
-        for a in range (2, i):
-            isPrime = True
+        isPrime = True
+        if i <= 1:
+            isPrime = False
+        for a in range(2, i):
             if i % a == 0:
                 isPrime = False
-            if isPrime:
-                primeNumbers = primeNumbers + str(i)+' '
-                break
+        if isPrime:
+            primeNumbers = primeNumbers+str(i)+' '
     return primeNumbers
 
 print('Los numeros primos del intervalo ingresado son: ',findPrimeNumbers(int(minValueInput), int(maxValueInput)))
