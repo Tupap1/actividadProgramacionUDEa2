@@ -1,9 +1,3 @@
-""" userInputNumA = float(input('Ingresa el numero A'))
-userInputNumB = float(input('Ingresa el numero B'))
-
-
-userInputOperation = int(input('Ingresa la operacion que quieres realizar: \n  1. Multiplicacion \n  2. Residuo de A/B \n 3. A**B \n 4. mayor de los dos numeros \n 5. Salir'))
- """
 def calculadora(operation, numberA, numberB):
     result = None
     operation = int(operation)

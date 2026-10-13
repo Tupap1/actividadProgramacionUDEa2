@@ -1,16 +1,3 @@
-"""  Determine el precio del servicio de agua potable para una casa, de acuerdo a las
-tarifas que establece la empresa de servicios públicos de acuerdo a la cantidad de
-metros cúbicos (𝑚³) consumidos.
-● 0-9 𝑚 - $6/𝑚³
-● 10-13 𝑚³ - $5/𝑚³
-● >13 𝑚 - $9/𝑚³
-Además, a todos los usuarios se les cobra una tarifa base de $50. Por último, si el
-usuario pertenece al estrato 1 o 2, se realiza un descuento del 20% del total. Realice un
-programa que determine el valor a pagar.
- """
- 
- 
- 
 usedWater = input('Ingresa la cantida de m3 consumidos: ')
 economicTier = input('Ingresa el estrato: ')
 
