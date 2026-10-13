@@ -15,6 +15,6 @@ while True:
             if inputPass == password:
                 print('acceso concedido')
                 break
-            if inputPass != password:
-                print('Acceso denegado')
+        if inputPass != password:
+            print('Acceso denegado')
         break
