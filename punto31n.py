@@ -7,8 +7,14 @@ def printPyramid(size):
         numbers = numbers +  str(i) + ' '
         print(((int(size)  - i)*' ') + numbers)
 
-        
-if piramydSize not in '1234567890' or piramydSize < 1 or piramydSize == '':
+for i in piramydSize:
+    if i in '1234567890':
+        isValid = True
+    else: 
+        isValid = False
+        break
+
+if isValid or piramydSize < 1 or piramydSize == '':
     print('ingresa una opcion valida')
 else:
     printPyramid(piramydSize)
