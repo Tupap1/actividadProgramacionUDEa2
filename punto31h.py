@@ -13,7 +13,7 @@ while True:
         break
 
 
-for i in range(-1, -len(binarynum), -1):
+for i in range(-1, -len(binarynum)-1, -1):
     print(decimal, binarynum[i])
     decimal = decimal + (int(binarynum[i]) * (2**power))
     power += 1

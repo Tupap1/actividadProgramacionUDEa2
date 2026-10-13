@@ -11,11 +11,9 @@ while True:
     else:
         break
 
-
-
 total = 0
 usedWater = float(usedWater)
-if usedWater  > 0 or usedWater <= 9:
+if usedWater  > 0 and usedWater <= 9:
     total = usedWater * 6
 elif usedWater >= 10 or usedWater >=  13:
     total = usedWater * 5
@@ -24,6 +22,6 @@ elif usedWater > 13:
 
 
 if economicTier in '12':
-    total = total* 0.80
+    total = total * 0.80
     
 print('El total a pagar es de: ', total+50)
