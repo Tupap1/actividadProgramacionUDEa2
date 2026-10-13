@@ -9,12 +9,12 @@ def printPyramid(size):
 
 for i in piramydSize:
     if i in '1234567890':
-        isValid = True
+        isInvalid = True
     else: 
-        isValid = False
+        isInvaalid = False
         break
 
-if isValid or piramydSize < 1 or piramydSize == '':
+if isInvalid == False or int(piramydSize) < 1 or piramydSize == '':
     print('ingresa una opcion valida')
 else:
     printPyramid(piramydSize)
