@@ -1,6 +1,6 @@
 inputPass = input('Ingresa la contraseña: ')
 
-tries = 3
+tries = 2
 password = '123asd'
 
 while True:
@@ -15,5 +15,6 @@ while True:
             if inputPass == password:
                 print('acceso concedido')
                 break
-        print('agotaste el numero de intentos')
+            if inputPass != password:
+                print('Acceso denegado')
         break

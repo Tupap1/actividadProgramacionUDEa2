@@ -11,7 +11,6 @@ while True:
     else:
         break
 
-total = 0
 def calculateTotal(usedWater, economicTier):
     total = 0
     if usedWater <= 9:

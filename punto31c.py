@@ -1,5 +1,5 @@
 def calculadora(operation, numberA, numberB):
-    result = None
+    result = 0
     operation = int(operation)
     if operation == 1:
         result = numberA* numberB
